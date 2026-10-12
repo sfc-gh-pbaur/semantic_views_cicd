@@ -80,7 +80,7 @@ create or replace semantic view SBB_RFP.SEMANTIC.SBB_EINKAUF
 		LIEFERANTEN.LIEFERANT_LAND as LAND comment='Ländercode',
 		LIEFERANTEN.BRANCHE as BRANCHE comment='Branche',
 		LIEFERANTEN.LIEFERANTENSTATUS as LIEFERANTENSTATUS comment='Aktiv Gesperrt Inaktiv',
-		WARENGRUPPEN.WARENGRUPPE_NAME as WARENGRUPPE_NAME comment='Warengruppe',
+		WARENGRUPPEN.WARENGRUPPE_NAME as WARENGRUPPE_NAME with synonyms=('Warengruppe','Materialgruppe','Warenkategorie','Produktgruppe','Beschaffungskategorie','Einkaufskategorie','Commodity','Material group','Product category','Spend category') comment='Warengruppe',
 		WARENGRUPPEN.OBERKATEGORIE as OBERKATEGORIE comment='Oberkategorie',
 		GESCHAEFTSPARTNER.GP_NAME as GP_NAME comment='Geschäftspartner',
 		GESCHAEFTSPARTNER.GP_TYP as GP_TYP comment='Typ Bestellung oder Rechnung',
